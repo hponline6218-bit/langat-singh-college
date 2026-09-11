@@ -1,7 +1,6 @@
 /* =========================================================
    LANGAT SINGH COLLEGE
    MAIN WEBSITE CSS
-   COLOR THEME: NAVY BLUE + GOLD
    ========================================================= */
 
 /* ================= RESET ================= */
@@ -18,7 +17,7 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #F5F7FA;
+    background: #f8f5f2;
     color: #222;
     line-height: 1.6;
 }
@@ -46,7 +45,7 @@ img {
 /* ================= TOP BAR ================= */
 
 .top-bar {
-    background: #12355B;
+    background: #6B1E3A;
     color: white;
 }
 
@@ -76,7 +75,7 @@ img {
 }
 
 .top-right a:hover {
-    color: #E0B52A;
+    color: #E0C05A;
 }
 
 
@@ -110,7 +109,7 @@ img {
 }
 
 .college-title h1 {
-    color: #12355B;
+    color: #6B1E3A;
     font-size: 30px;
     line-height: 1.2;
     margin-bottom: 5px;
@@ -130,11 +129,11 @@ img {
 }
 
 
-/* ================= NAVIGATION ================= */
+/* ================= NAV ================= */
 
 .navbar {
     background: white;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, .08);
+    box-shadow: 0 3px 15px rgba(0,0,0,.08);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -163,14 +162,14 @@ img {
     height: 3px;
     left: 50%;
     bottom: 0;
-    background: #174A7E;
+    background: #8F2D56;
     transform: translateX(-50%);
     transition: .3s;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: #174A7E;
+    color: #8F2D56;
 }
 
 .nav-links a:hover::after,
@@ -190,9 +189,9 @@ img {
 
     background: linear-gradient(
         90deg,
-        rgba(7, 26, 48, .97),
-        rgba(18, 53, 91, .88),
-        rgba(23, 74, 126, .65)
+        rgba(66,16,34,.97),
+        rgba(107,30,58,.88),
+        rgba(143,45,86,.65)
     );
 }
 
@@ -201,7 +200,7 @@ img {
     position: absolute;
     width: 450px;
     height: 450px;
-    border: 70px solid rgba(255, 255, 255, .05);
+    border: 70px solid rgba(255,255,255,.05);
     border-radius: 50%;
     right: -170px;
     top: -150px;
@@ -212,7 +211,7 @@ img {
     position: absolute;
     width: 300px;
     height: 300px;
-    border: 50px solid rgba(212, 160, 23, .09);
+    border: 50px solid rgba(212,175,55,.08);
     border-radius: 50%;
     right: 170px;
     bottom: -190px;
@@ -231,8 +230,8 @@ img {
 
 .hero-tag {
     display: inline-block;
-    background: #D4A017;
-    color: #071A30;
+    background: #D4AF37;
+    color: #421022;
     padding: 8px 18px;
     border-radius: 30px;
     font-size: 12px;
@@ -250,7 +249,7 @@ img {
 
 .hero p {
     max-width: 650px;
-    color: rgba(255, 255, 255, .9);
+    color: rgba(255,255,255,.9);
     font-size: 18px;
     margin-bottom: 30px;
 }
@@ -270,9 +269,9 @@ img {
     align-items: center;
     justify-content: center;
     padding: 13px 25px;
-    background: #D4A017;
-    color: #071A30;
-    border: 2px solid #D4A017;
+    background: #D4AF37;
+    color: #421022;
+    border: 2px solid #D4AF37;
     border-radius: 6px;
     font-size: 15px;
     font-weight: 700;
@@ -283,17 +282,17 @@ img {
     background: white;
     border-color: white;
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, .2);
+    box-shadow: 0 8px 20px rgba(0,0,0,.2);
 }
 
 .btn-outline {
     background: transparent;
     color: white;
-    border-color: rgba(255, 255, 255, .8);
+    border-color: rgba(255,255,255,.8);
 }
 
 .btn-outline:hover {
-    color: #12355B;
+    color: #6B1E3A;
 }
 
 
@@ -316,7 +315,7 @@ img {
 
 .section-heading span {
     display: inline-block;
-    color: #174A7E;
+    color: #8F2D56;
     font-size: 13px;
     font-weight: 800;
     letter-spacing: 1.5px;
@@ -349,7 +348,7 @@ img {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4,1fr);
     gap: 22px;
 }
 
@@ -359,14 +358,14 @@ img {
     border-radius: 12px;
     padding: 30px 22px;
     text-align: center;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, .06);
+    box-shadow: 0 8px 25px rgba(0,0,0,.06);
     transition: .3s;
 }
 
 .service-card:hover {
     transform: translateY(-8px);
-    border-color: #2B6A9A;
-    box-shadow: 0 15px 35px rgba(11, 37, 69, .14);
+    border-color: #A94367;
+    box-shadow: 0 15px 35px rgba(88,21,47,.14);
 }
 
 .service-icon {
@@ -376,13 +375,13 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #EEF4F9;
+    background: #F8EEF2;
     border-radius: 15px;
     font-size: 32px;
 }
 
 .service-card h3 {
-    color: #0B2545;
+    color: #6B1E3A;
     font-size: 20px;
     margin-bottom: 9px;
 }
@@ -394,21 +393,21 @@ img {
 }
 
 .read-more {
-    color: #174A7E;
+    color: #8F2D56;
     font-size: 14px;
     font-weight: 700;
     transition: .3s;
 }
 
 .read-more:hover {
-    color: #D4A017;
+    color: #B8860B;
 }
 
 
 /* ================= ABOUT + NOTICE ================= */
 
 .main-section {
-    background: #F5F7FA;
+    background: #f8f5f2;
 }
 
 .main-grid {
@@ -422,7 +421,7 @@ img {
     background: white;
     border-radius: 14px;
     padding: 38px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, .06);
+    box-shadow: 0 8px 30px rgba(0,0,0,.06);
 }
 
 .about-box p {
@@ -452,8 +451,8 @@ img {
 }
 
 .notice-item:hover {
-    background: #F3F7FB;
-    border-color: #B8CADB;
+    background: #FBF2F5;
+    border-color: #D9B8C5;
     transform: translateX(5px);
 }
 
@@ -464,7 +463,7 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 7px;
-    background: #0B2545;
+    background: #7A2346;
     color: white;
     font-size: 10px;
     font-weight: 800;
@@ -481,19 +480,19 @@ img {
 }
 
 .notice-content a {
-    color: #174A7E;
+    color: #8F2D56;
     font-size: 13px;
     font-weight: 700;
 }
 
 .notice-content a:hover {
-    color: #D4A017;
+    color: #B8860B;
 }
 
 .view-all {
     display: inline-block;
     margin-top: 20px;
-    color: #174A7E;
+    color: #8F2D56;
     font-size: 14px;
     font-weight: 700;
 }
@@ -507,7 +506,7 @@ img {
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4,1fr);
     gap: 22px;
 }
 
@@ -523,7 +522,7 @@ img {
 .feature-card:hover {
     background: white;
     transform: translateY(-7px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, .09);
+    box-shadow: 0 12px 30px rgba(0,0,0,.09);
 }
 
 .feature-icon {
@@ -532,7 +531,7 @@ img {
 }
 
 .feature-card h3 {
-    color: #0B2545;
+    color: #6B1E3A;
     font-size: 19px;
     margin-bottom: 9px;
 }
@@ -548,8 +547,8 @@ img {
 .cta-section {
     background: linear-gradient(
         135deg,
-        #0B2545,
-        #174A7E
+        #58152F,
+        #8F2D56
     );
     padding: 75px 0;
     color: white;
@@ -567,7 +566,7 @@ img {
 }
 
 .cta-content p {
-    color: rgba(255, 255, 255, .88);
+    color: rgba(255,255,255,.88);
     margin-bottom: 25px;
 }
 
@@ -579,7 +578,7 @@ img {
 /* ================= FOOTER ================= */
 
 footer {
-    background: #071A30;
+    background: #421022;
     color: #ddd;
 }
 
@@ -601,7 +600,7 @@ footer {
     display: block;
     width: 40px;
     height: 3px;
-    background: #D4A017;
+    background: #D4AF37;
     margin-top: 8px;
 }
 
@@ -622,7 +621,7 @@ footer {
 }
 
 .footer-column ul li a:hover {
-    color: #E0B52A;
+    color: #D4AF37;
     padding-left: 5px;
 }
 
@@ -640,7 +639,7 @@ footer {
 
 /* ================= TABLET ================= */
 
-@media (max-width: 1000px) {
+@media (max-width:1000px) {
 
     .college-logo {
         width: 240px;
@@ -654,11 +653,11 @@ footer {
 
     .services-grid,
     .features-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2,1fr);
     }
 
     .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2,1fr);
     }
 
     .hero h2 {
@@ -673,7 +672,7 @@ footer {
 
 /* ================= MOBILE ================= */
 
-@media (max-width: 700px) {
+@media (max-width:700px) {
 
     .top-bar-content {
         flex-direction: column;
@@ -772,7 +771,7 @@ footer {
 
 /* ================= SMALL MOBILE ================= */
 
-@media (max-width: 450px) {
+@media (max-width:450px) {
 
     .container {
         width: 92%;
@@ -827,7 +826,7 @@ footer {
 
 .latest-notices {
     padding: 70px 20px;
-    background: #F8FAFC;
+    background: #f8f5f2;
 }
 
 .section-heading {
@@ -836,7 +835,7 @@ footer {
 }
 
 .section-heading span {
-    color: #0B2545;
+    color: #7A2346;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -855,7 +854,7 @@ footer {
 
 .notice-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 25px;
 }
 
@@ -865,7 +864,7 @@ footer {
     border-radius: 10px;
     display: flex;
     gap: 20px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
     transition: .3s;
 }
 
@@ -876,7 +875,7 @@ footer {
 .notice-date {
     min-width: 55px;
     height: 55px;
-    background: #0B2545;
+    background: #7A2346;
     color: #fff;
     border-radius: 8px;
     display: flex;
@@ -900,7 +899,7 @@ footer {
 }
 
 .notice-content a {
-    color: #0B2545;
+    color: #7A2346;
     font-weight: 600;
     text-decoration: none;
 }
@@ -912,7 +911,7 @@ footer {
 
 .notice-button a {
     display: inline-block;
-    background: #0B2545;
+    background: #7A2346;
     color: #fff;
     padding: 12px 25px;
     border-radius: 5px;
@@ -920,7 +919,7 @@ footer {
     font-weight: 600;
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
 
     .notice-grid {
         grid-template-columns: 1fr;
@@ -941,7 +940,7 @@ footer {
 
 .links-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 25px;
 }
 
@@ -958,8 +957,8 @@ footer {
 
 .link-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, .10);
-    border-color: #0B2545;
+    box-shadow: 0 8px 25px rgba(0,0,0,.10);
+    border-color: #7A2346;
 }
 
 .link-icon {
@@ -968,7 +967,7 @@ footer {
 }
 
 .link-card h3 {
-    color: #0B2545;
+    color: #7A2346;
     margin: 0 0 10px;
     font-size: 20px;
 }
@@ -980,7 +979,7 @@ footer {
     line-height: 1.6;
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
 
     .links-grid {
         grid-template-columns: 1fr;
@@ -992,12 +991,12 @@ footer {
 
 .college-highlights {
     padding: 70px 20px;
-    background: #F8FAFC;
+    background: #f8f5f2;
 }
 
 .highlight-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4,1fr);
     gap: 25px;
 }
 
@@ -1012,13 +1011,13 @@ footer {
 
 .highlight-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, .10);
+    box-shadow: 0 8px 25px rgba(0,0,0,.10);
 }
 
 .highlight-number {
     font-size: 32px;
     font-weight: 800;
-    color: #0B2545;
+    color: #7A2346;
     margin-bottom: 12px;
 }
 
@@ -1035,14 +1034,14 @@ footer {
     line-height: 1.6;
 }
 
-@media (max-width: 900px) {
+@media (max-width:900px) {
 
     .highlight-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2,1fr);
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width:600px) {
 
     .highlight-grid {
         grid-template-columns: 1fr;
@@ -1053,7 +1052,7 @@ footer {
 /* ================= PROFESSIONAL FOOTER ================= */
 
 .main-footer {
-    background: #0B2545;
+    background: #421022;
     color: #fff;
     margin-top: 0;
 }
@@ -1090,12 +1089,12 @@ footer {
 }
 
 .footer-column a:hover {
-    color: #E0B52A;
+    color: #D4AF37;
     padding-left: 5px;
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, .15);
+    border-top: 1px solid rgba(255,255,255,.15);
     text-align: center;
     padding: 20px;
 }
@@ -1106,7 +1105,7 @@ footer {
     font-size: 13px;
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
 
     .footer-container {
         grid-template-columns: 1fr;
@@ -1119,7 +1118,7 @@ footer {
 /* ================= GALLERY ================= */
 
 .page-banner {
-    background: #0B2545;
+    background: #7A2346;
     color: #fff;
     text-align: center;
     padding: 55px 20px;
@@ -1137,12 +1136,12 @@ footer {
 
 .gallery-section {
     padding: 70px 20px;
-    background: #F8FAFC;
+    background: #f8f5f2;
 }
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 25px;
 }
 
@@ -1156,7 +1155,7 @@ footer {
 
 .gallery-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, .12);
+    box-shadow: 0 8px 25px rgba(0,0,0,.12);
 }
 
 .gallery-placeholder {
@@ -1177,7 +1176,7 @@ footer {
 
 .gallery-info h3 {
     margin: 0 0 8px;
-    color: #0B2545;
+    color: #7A2346;
     font-size: 19px;
 }
 
@@ -1187,14 +1186,14 @@ footer {
     font-size: 14px;
 }
 
-@media (max-width: 900px) {
+@media (max-width:900px) {
 
     .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2,1fr);
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width:600px) {
 
     .gallery-grid {
         grid-template-columns: 1fr;
@@ -1210,12 +1209,12 @@ footer {
 
 .contact-section {
     padding: 70px 20px;
-    background: #F8FAFC;
+    background: #f8f5f2;
 }
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 25px;
     margin-bottom: 50px;
 }
@@ -1231,7 +1230,7 @@ footer {
 
 .contact-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, .10);
+    box-shadow: 0 8px 25px rgba(0,0,0,.10);
 }
 
 .contact-icon {
@@ -1240,7 +1239,7 @@ footer {
 }
 
 .contact-card h3 {
-    color: #0B2545;
+    color: #7A2346;
     margin: 0 0 12px;
 }
 
@@ -1259,12 +1258,12 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, .08);
+    box-shadow: 0 5px 25px rgba(0,0,0,.08);
 }
 
 .contact-information h2,
 .contact-form h2 {
-    color: #0B2545;
+    color: #7A2346;
     margin-top: 0;
     margin-bottom: 20px;
 }
@@ -1314,12 +1313,12 @@ footer {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #0B2545;
+    border-color: #7A2346;
 }
 
 .contact-form button {
     border: none;
-    background: #0B2545;
+    background: #7A2346;
     color: #fff;
     padding: 13px 25px;
     border-radius: 5px;
@@ -1328,10 +1327,10 @@ footer {
 }
 
 .contact-form button:hover {
-    background: #071A30;
+    background: #58152F;
 }
 
-@media (max-width: 800px) {
+@media (max-width:800px) {
 
     .contact-grid {
         grid-template-columns: 1fr;
