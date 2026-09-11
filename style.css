@@ -1,8 +1,8 @@
 /* =========================================================
    LANGAT SINGH COLLEGE
    MAIN WEBSITE CSS
+   COLOR THEME: NAVY BLUE + GOLD
    ========================================================= */
-
 
 /* ================= RESET ================= */
 
@@ -18,7 +18,7 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f5f7fb;
+    background: #F5F7FA;
     color: #222;
     line-height: 1.6;
 }
@@ -43,18 +43,15 @@ img {
 }
 
 
-/* =========================================================
-   TOP BAR
-   ========================================================= */
+/* ================= TOP BAR ================= */
 
 .top-bar {
-    background: #800000;
+    background: #12355B;
     color: white;
 }
 
 .top-bar-content {
     min-height: 40px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -75,17 +72,15 @@ img {
     color: white;
     font-size: 13px;
     font-weight: 600;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .top-right a:hover {
-    color: #ffd45c;
+    color: #E0B52A;
 }
 
 
-/* =========================================================
-   COLLEGE HEADER
-   ========================================================= */
+/* ================= HEADER ================= */
 
 .college-header {
     background: white;
@@ -94,22 +89,15 @@ img {
 
 .header-content {
     min-height: 125px;
-
     display: flex;
     align-items: center;
-
     gap: 28px;
 }
-
-
-/* ---------- COLLEGE LOGO ---------- */
 
 .college-logo {
     width: 322px;
     height: 62px;
-
     flex-shrink: 0;
-
     display: flex;
     align-items: center;
 }
@@ -117,106 +105,72 @@ img {
 .college-logo img {
     width: 322px;
     height: 62px;
-
     object-fit: contain;
     object-position: center;
 }
 
-
-/* ---------- COLLEGE TITLE ---------- */
-
 .college-title h1 {
-    color: #800000;
-
+    color: #12355B;
     font-size: 30px;
-
     line-height: 1.2;
-
     margin-bottom: 5px;
-
     font-weight: 800;
 }
 
 .college-title p {
     color: #444;
-
     font-size: 17px;
-
     font-weight: 700;
-
     margin-bottom: 2px;
 }
 
 .college-title span {
     color: #777;
-
     font-size: 13px;
 }
 
 
-/* =========================================================
-   NAVIGATION
-   ========================================================= */
+/* ================= NAVIGATION ================= */
 
 .navbar {
     background: white;
-
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
-
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .08);
     position: sticky;
-
     top: 0;
-
     z-index: 1000;
 }
 
 .nav-links {
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     flex-wrap: wrap;
 }
 
 .nav-links a {
     position: relative;
-
     color: #333;
-
     font-size: 15px;
-
     font-weight: 600;
-
     padding: 17px 16px;
-
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .nav-links a::after {
     content: "";
-
     position: absolute;
-
     width: 0;
-
     height: 3px;
-
     left: 50%;
-
     bottom: 0;
-
-    background: #a00000;
-
+    background: #174A7E;
     transform: translateX(-50%);
-
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: #a00000;
+    color: #174A7E;
 }
 
 .nav-links a:hover::after,
@@ -225,180 +179,125 @@ img {
 }
 
 
-/* =========================================================
-   HERO
-   ========================================================= */
+/* ================= HERO ================= */
 
 .hero {
     min-height: 510px;
-
     display: flex;
-
     align-items: center;
-
     position: relative;
-
     overflow: hidden;
 
-    background:
-        linear-gradient(
-            90deg,
-            rgba(66, 0, 0, 0.97),
-            rgba(126, 0, 0, 0.88),
-            rgba(165, 30, 30, 0.65)
-        );
+    background: linear-gradient(
+        90deg,
+        rgba(7, 26, 48, .97),
+        rgba(18, 53, 91, .88),
+        rgba(23, 74, 126, .65)
+    );
 }
 
 .hero::before {
     content: "";
-
     position: absolute;
-
     width: 450px;
     height: 450px;
-
-    border: 70px solid rgba(255, 255, 255, 0.05);
-
+    border: 70px solid rgba(255, 255, 255, .05);
     border-radius: 50%;
-
     right: -170px;
     top: -150px;
 }
 
 .hero::after {
     content: "";
-
     position: absolute;
-
     width: 300px;
     height: 300px;
-
-    border: 50px solid rgba(255, 210, 100, 0.07);
-
+    border: 50px solid rgba(212, 160, 23, .09);
     border-radius: 50%;
-
     right: 170px;
     bottom: -190px;
 }
 
 .hero-content {
     position: relative;
-
     z-index: 2;
-
     padding: 80px 0;
 }
 
 .hero-text {
     max-width: 720px;
-
     color: white;
 }
 
 .hero-tag {
     display: inline-block;
-
-    background: #f3ca5c;
-
-    color: #5b0000;
-
+    background: #D4A017;
+    color: #071A30;
     padding: 8px 18px;
-
     border-radius: 30px;
-
     font-size: 12px;
-
     font-weight: 800;
-
     letter-spacing: 1px;
-
     margin-bottom: 20px;
 }
 
 .hero h2 {
     font-size: 52px;
-
     line-height: 1.1;
-
     font-weight: 800;
-
     margin-bottom: 22px;
 }
 
 .hero p {
     max-width: 650px;
-
-    color: rgba(255, 255, 255, 0.9);
-
+    color: rgba(255, 255, 255, .9);
     font-size: 18px;
-
     margin-bottom: 30px;
 }
 
 
-/* =========================================================
-   BUTTONS
-   ========================================================= */
+/* ================= BUTTONS ================= */
 
 .hero-buttons,
 .cta-buttons {
     display: flex;
-
     gap: 15px;
-
     flex-wrap: wrap;
 }
 
 .btn {
     display: inline-flex;
-
     align-items: center;
-
     justify-content: center;
-
     padding: 13px 25px;
-
-    background: #f3ca5c;
-
-    color: #500000;
-
-    border: 2px solid #f3ca5c;
-
+    background: #D4A017;
+    color: #071A30;
+    border: 2px solid #D4A017;
     border-radius: 6px;
-
     font-size: 15px;
-
     font-weight: 700;
-
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .btn:hover {
     background: white;
-
     border-color: white;
-
     transform: translateY(-3px);
-
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .2);
 }
 
 .btn-outline {
     background: transparent;
-
     color: white;
-
-    border-color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(255, 255, 255, .8);
 }
 
 .btn-outline:hover {
-    color: #800000;
+    color: #12355B;
 }
 
 
-/* =========================================================
-   COMMON SECTIONS
-   ========================================================= */
+/* ================= COMMON ================= */
 
 .quick-section,
 .main-section,
@@ -412,39 +311,28 @@ img {
 
 .section-heading {
     text-align: center;
-
     margin-bottom: 45px;
 }
 
 .section-heading span {
     display: inline-block;
-
-    color: #9b0000;
-
+    color: #174A7E;
     font-size: 13px;
-
     font-weight: 800;
-
     letter-spacing: 1.5px;
-
     margin-bottom: 8px;
 }
 
 .section-heading h2 {
     color: #222;
-
     font-size: 34px;
-
     line-height: 1.25;
-
     margin-bottom: 10px;
 }
 
 .section-heading p {
     color: #666;
-
     max-width: 650px;
-
     margin: auto;
 }
 
@@ -457,184 +345,128 @@ img {
 }
 
 
-/* =========================================================
-   SERVICES
-   ========================================================= */
+/* ================= SERVICES ================= */
 
 .services-grid {
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
     gap: 22px;
 }
 
 .service-card {
     background: white;
-
     border: 1px solid #e6e6e6;
-
     border-radius: 12px;
-
     padding: 30px 22px;
-
     text-align: center;
-
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
-
-    transition: 0.3s;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .06);
+    transition: .3s;
 }
 
 .service-card:hover {
     transform: translateY(-8px);
-
-    border-color: #c62828;
-
-    box-shadow: 0 15px 35px rgba(120, 0, 0, 0.14);
+    border-color: #2B6A9A;
+    box-shadow: 0 15px 35px rgba(11, 37, 69, .14);
 }
 
 .service-icon {
     width: 70px;
     height: 70px;
-
     margin: 0 auto 18px;
-
     display: flex;
-
     align-items: center;
     justify-content: center;
-
-    background: #fff0f0;
-
+    background: #EEF4F9;
     border-radius: 15px;
-
     font-size: 32px;
 }
 
 .service-card h3 {
-    color: #780000;
-
+    color: #0B2545;
     font-size: 20px;
-
     margin-bottom: 9px;
 }
 
 .service-card p {
     color: #666;
-
     font-size: 14px;
-
     margin-bottom: 14px;
 }
 
 .read-more {
-    color: #9b0000;
-
+    color: #174A7E;
     font-size: 14px;
-
     font-weight: 700;
-
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .read-more:hover {
-    color: #c58a00;
+    color: #D4A017;
 }
 
 
-/* =========================================================
-   ABOUT + NOTICE
-   ========================================================= */
+/* ================= ABOUT + NOTICE ================= */
 
 .main-section {
-    background: #f5f7fb;
+    background: #F5F7FA;
 }
 
 .main-grid {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 30px;
 }
 
 .about-box,
 .notice-box {
     background: white;
-
     border-radius: 14px;
-
     padding: 38px;
-
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .06);
 }
 
 .about-box p {
     color: #555;
-
     font-size: 15px;
-
     margin-bottom: 16px;
 }
 
 
-/* =========================================================
-   NOTICE BOARD
-   ========================================================= */
+/* ================= NOTICE ================= */
 
 .notice-list {
     display: flex;
-
     flex-direction: column;
-
     gap: 13px;
 }
 
 .notice-item {
     display: flex;
-
     align-items: center;
-
     gap: 15px;
-
     padding: 14px;
-
     border: 1px solid #eee;
-
     border-radius: 9px;
-
     background: #fafafa;
-
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .notice-item:hover {
-    background: #fff5f5;
-
-    border-color: #e0aaaa;
-
+    background: #F3F7FB;
+    border-color: #B8CADB;
     transform: translateX(5px);
 }
 
 .notice-date {
     min-width: 55px;
-
     height: 45px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     border-radius: 7px;
-
-    background: #8b0000;
-
+    background: #0B2545;
     color: white;
-
     font-size: 10px;
-
     font-weight: 800;
 }
 
@@ -644,40 +476,30 @@ img {
 
 .notice-content h3 {
     color: #333;
-
     font-size: 15px;
-
     margin-bottom: 3px;
 }
 
 .notice-content a {
-    color: #9b0000;
-
+    color: #174A7E;
     font-size: 13px;
-
     font-weight: 700;
 }
 
 .notice-content a:hover {
-    color: #c28a00;
+    color: #D4A017;
 }
 
 .view-all {
     display: inline-block;
-
     margin-top: 20px;
-
-    color: #9b0000;
-
+    color: #174A7E;
     font-size: 14px;
-
     font-weight: 700;
 }
 
 
-/* =========================================================
-   FEATURES
-   ========================================================= */
+/* ================= FEATURES ================= */
 
 .features-section {
     background: white;
@@ -685,84 +507,67 @@ img {
 
 .features-grid {
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
     gap: 22px;
 }
 
 .feature-card {
     background: #fafafa;
-
     border: 1px solid #eee;
-
     border-radius: 12px;
-
     padding: 30px 22px;
-
     text-align: center;
-
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .feature-card:hover {
     background: white;
-
     transform: translateY(-7px);
-
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .09);
 }
 
 .feature-icon {
     font-size: 38px;
-
     margin-bottom: 13px;
 }
 
 .feature-card h3 {
-    color: #780000;
-
+    color: #0B2545;
     font-size: 19px;
-
     margin-bottom: 9px;
 }
 
 .feature-card p {
     color: #666;
-
     font-size: 14px;
 }
 
 
-/* =========================================================
-   CTA
-   ========================================================= */
+/* ================= CTA ================= */
 
 .cta-section {
-    background: linear-gradient(135deg, #720000, #a80000);
-
+    background: linear-gradient(
+        135deg,
+        #0B2545,
+        #174A7E
+    );
     padding: 75px 0;
-
     color: white;
-
     text-align: center;
 }
 
 .cta-content {
     max-width: 750px;
-
     margin: auto;
 }
 
 .cta-content h2 {
     font-size: 35px;
-
     margin-bottom: 12px;
 }
 
 .cta-content p {
-    color: rgba(255, 255, 255, 0.88);
-
+    color: rgba(255, 255, 255, .88);
     margin-bottom: 25px;
 }
 
@@ -771,53 +576,38 @@ img {
 }
 
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
+/* ================= FOOTER ================= */
 
 footer {
-    background: #171717;
-
+    background: #071A30;
     color: #ddd;
 }
 
 .footer-grid {
     display: grid;
-
     grid-template-columns: 1.4fr 1fr 1fr 1.3fr;
-
     gap: 40px;
-
     padding: 30px 0 30px;
 }
 
 .footer-column h3 {
     color: white;
-
     font-size: 19px;
-
     margin-bottom: 20px;
 }
 
 .footer-column h3::after {
     content: "";
-
     display: block;
-
     width: 40px;
-
     height: 3px;
-
-    background: #d5a83c;
-
+    background: #D4A017;
     margin-top: 8px;
 }
 
 .footer-column p {
     color: #aaa;
-
     font-size: 14px;
-
     margin-bottom: 10px;
 }
 
@@ -827,36 +617,28 @@ footer {
 
 .footer-column ul li a {
     color: #aaa;
-
     font-size: 14px;
-
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .footer-column ul li a:hover {
-    color: #f2c85b;
-
+    color: #E0B52A;
     padding-left: 5px;
 }
 
 .footer-bottom {
     border-top: 1px solid #333;
-
     text-align: center;
-
     padding: 18px 0;
 }
 
 .footer-bottom p {
     color: #999;
-
     font-size: 13px;
 }
 
 
-/* =========================================================
-   TABLET
-   ========================================================= */
+/* ================= TABLET ================= */
 
 @media (max-width: 1000px) {
 
@@ -889,38 +671,27 @@ footer {
 }
 
 
-/* =========================================================
-   MOBILE
-   ========================================================= */
+/* ================= MOBILE ================= */
 
 @media (max-width: 700px) {
 
     .top-bar-content {
         flex-direction: column;
-
         padding: 9px 0;
-
         gap: 5px;
-
         text-align: center;
     }
 
     .top-right {
         justify-content: center;
-
         gap: 14px;
-
         flex-wrap: wrap;
     }
 
-
     .header-content {
         min-height: 105px;
-
         justify-content: center;
-
         text-align: center;
-
         gap: 10px;
     }
 
@@ -946,17 +717,14 @@ footer {
         font-size: 10px;
     }
 
-
     .nav-links {
         justify-content: center;
     }
 
     .nav-links a {
         padding: 11px 8px;
-
         font-size: 13px;
     }
-
 
     .hero {
         min-height: 460px;
@@ -974,7 +742,6 @@ footer {
         font-size: 16px;
     }
 
-
     .quick-section,
     .main-section,
     .features-section {
@@ -985,7 +752,6 @@ footer {
         font-size: 29px;
     }
 
-
     .services-grid,
     .features-grid,
     .main-grid,
@@ -993,12 +759,10 @@ footer {
         grid-template-columns: 1fr;
     }
 
-
     .about-box,
     .notice-box {
         padding: 27px;
     }
-
 
     .cta-content h2 {
         font-size: 28px;
@@ -1006,9 +770,7 @@ footer {
 }
 
 
-/* =========================================================
-   SMALL MOBILE
-   ========================================================= */
+/* ================= SMALL MOBILE ================= */
 
 @media (max-width: 450px) {
 
@@ -1041,18 +803,14 @@ footer {
         font-size: 9px;
     }
 
-
     .nav-links a {
         padding: 9px 6px;
-
         font-size: 12px;
     }
-
 
     .hero h2 {
         font-size: 31px;
     }
-
 
     .hero-buttons,
     .cta-buttons {
@@ -1062,13 +820,14 @@ footer {
     .btn {
         width: 100%;
     }
-
 }
-/* LATEST NOTICES */
+
+
+/* ================= LATEST NOTICES ================= */
 
 .latest-notices {
     padding: 70px 20px;
-    background: #f8f8f8;
+    background: #F8FAFC;
 }
 
 .section-heading {
@@ -1077,7 +836,7 @@ footer {
 }
 
 .section-heading span {
-    color: #8b0000;
+    color: #0B2545;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -1106,8 +865,8 @@ footer {
     border-radius: 10px;
     display: flex;
     gap: 20px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    transition: 0.3s;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+    transition: .3s;
 }
 
 .notice-card:hover {
@@ -1117,7 +876,7 @@ footer {
 .notice-date {
     min-width: 55px;
     height: 55px;
-    background: #8b0000;
+    background: #0B2545;
     color: #fff;
     border-radius: 8px;
     display: flex;
@@ -1141,7 +900,7 @@ footer {
 }
 
 .notice-content a {
-    color: #8b0000;
+    color: #0B2545;
     font-weight: 600;
     text-decoration: none;
 }
@@ -1153,7 +912,7 @@ footer {
 
 .notice-button a {
     display: inline-block;
-    background: #8b0000;
+    background: #0B2545;
     color: #fff;
     padding: 12px 25px;
     border-radius: 5px;
@@ -1161,7 +920,6 @@ footer {
     font-weight: 600;
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
 
     .notice-grid {
@@ -1171,13 +929,14 @@ footer {
     .section-heading h2 {
         font-size: 28px;
     }
-
 }
-/* IMPORTANT LINKS */
+
+
+/* ================= IMPORTANT LINKS ================= */
 
 .important-links {
     padding: 70px 20px;
-    background: #ffffff;
+    background: #fff;
 }
 
 .links-grid {
@@ -1194,13 +953,13 @@ footer {
     border: 1px solid #eee;
     border-radius: 10px;
     text-decoration: none;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .link-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.10);
-    border-color: #8b0000;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .10);
+    border-color: #0B2545;
 }
 
 .link-icon {
@@ -1209,7 +968,7 @@ footer {
 }
 
 .link-card h3 {
-    color: #8b0000;
+    color: #0B2545;
     margin: 0 0 10px;
     font-size: 20px;
 }
@@ -1226,13 +985,14 @@ footer {
     .links-grid {
         grid-template-columns: 1fr;
     }
-
 }
-/* COLLEGE HIGHLIGHTS */
+
+
+/* ================= COLLEGE HIGHLIGHTS ================= */
 
 .college-highlights {
     padding: 70px 20px;
-    background: #f8f8f8;
+    background: #F8FAFC;
 }
 
 .highlight-grid {
@@ -1242,23 +1002,23 @@ footer {
 }
 
 .highlight-card {
-    background: #ffffff;
+    background: #fff;
     padding: 35px 20px;
     text-align: center;
     border-radius: 10px;
-    border: 1px solid #eeeeee;
-    transition: 0.3s;
+    border: 1px solid #eee;
+    transition: .3s;
 }
 
 .highlight-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .10);
 }
 
 .highlight-number {
     font-size: 32px;
     font-weight: 800;
-    color: #8b0000;
+    color: #0B2545;
     margin-bottom: 12px;
 }
 
@@ -1280,7 +1040,6 @@ footer {
     .highlight-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
 @media (max-width: 600px) {
@@ -1288,13 +1047,14 @@ footer {
     .highlight-grid {
         grid-template-columns: 1fr;
     }
-
 }
-/* PROFESSIONAL FOOTER */
+
+
+/* ================= PROFESSIONAL FOOTER ================= */
 
 .main-footer {
-    background: #3b0000;
-    color: #ffffff;
+    background: #0B2545;
+    color: #fff;
     margin-top: 0;
 }
 
@@ -1302,7 +1062,6 @@ footer {
     max-width: 1200px;
     margin: auto;
     padding: 60px 20px 45px;
-
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
     gap: 40px;
@@ -1311,11 +1070,11 @@ footer {
 .footer-column h3 {
     font-size: 20px;
     margin: 0 0 20px;
-    color: #ffffff;
+    color: #fff;
 }
 
 .footer-column p {
-    color: #dddddd;
+    color: #ddd;
     font-size: 14px;
     line-height: 1.7;
     margin: 0 0 12px;
@@ -1323,32 +1082,29 @@ footer {
 
 .footer-column a {
     display: block;
-    color: #dddddd;
+    color: #ddd;
     text-decoration: none;
     font-size: 14px;
     margin-bottom: 12px;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .footer-column a:hover {
-    color: #ffffff;
+    color: #E0B52A;
     padding-left: 5px;
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255,255,255,0.15);
+    border-top: 1px solid rgba(255, 255, 255, .15);
     text-align: center;
     padding: 20px;
 }
 
 .footer-bottom p {
     margin: 0;
-    color: #cccccc;
+    color: #ccc;
     font-size: 13px;
 }
-
-
-/* MOBILE FOOTER */
 
 @media (max-width: 768px) {
 
@@ -1357,13 +1113,14 @@ footer {
         gap: 30px;
         padding: 45px 20px 30px;
     }
-
 }
-/* GALLERY PAGE */
+
+
+/* ================= GALLERY ================= */
 
 .page-banner {
-    background: #8b0000;
-    color: #ffffff;
+    background: #0B2545;
+    color: #fff;
     text-align: center;
     padding: 55px 20px;
 }
@@ -1380,7 +1137,7 @@ footer {
 
 .gallery-section {
     padding: 70px 20px;
-    background: #f8f8f8;
+    background: #F8FAFC;
 }
 
 .gallery-grid {
@@ -1390,21 +1147,21 @@ footer {
 }
 
 .gallery-card {
-    background: #ffffff;
+    background: #fff;
     border-radius: 10px;
     overflow: hidden;
-    border: 1px solid #eeeeee;
-    transition: 0.3s;
+    border: 1px solid #eee;
+    transition: .3s;
 }
 
 .gallery-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .12);
 }
 
 .gallery-placeholder {
     height: 210px;
-    background: #eeeeee;
+    background: #eee;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1420,13 +1177,13 @@ footer {
 
 .gallery-info h3 {
     margin: 0 0 8px;
-    color: #8b0000;
+    color: #0B2545;
     font-size: 19px;
 }
 
 .gallery-info p {
     margin: 0;
-    color: #666666;
+    color: #666;
     font-size: 14px;
 }
 
@@ -1435,7 +1192,6 @@ footer {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
 @media (max-width: 600px) {
@@ -1447,13 +1203,14 @@ footer {
     .page-banner h2 {
         font-size: 30px;
     }
-
 }
-/* CONTACT PAGE */
+
+
+/* ================= CONTACT ================= */
 
 .contact-section {
     padding: 70px 20px;
-    background: #f8f8f8;
+    background: #F8FAFC;
 }
 
 .contact-grid {
@@ -1464,17 +1221,17 @@ footer {
 }
 
 .contact-card {
-    background: #ffffff;
+    background: #fff;
     padding: 30px 20px;
     text-align: center;
     border-radius: 10px;
-    border: 1px solid #eeeeee;
-    transition: 0.3s;
+    border: 1px solid #eee;
+    transition: .3s;
 }
 
 .contact-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .10);
 }
 
 .contact-icon {
@@ -1483,12 +1240,12 @@ footer {
 }
 
 .contact-card h3 {
-    color: #8b0000;
+    color: #0B2545;
     margin: 0 0 12px;
 }
 
 .contact-card p {
-    color: #666666;
+    color: #666;
     line-height: 1.7;
     margin: 0;
 }
@@ -1496,26 +1253,24 @@ footer {
 .contact-main-box {
     max-width: 1100px;
     margin: auto;
-    background: #ffffff;
+    background: #fff;
     padding: 40px;
     border-radius: 12px;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
-
-    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .08);
 }
 
 .contact-information h2,
 .contact-form h2 {
-    color: #8b0000;
+    color: #0B2545;
     margin-top: 0;
     margin-bottom: 20px;
 }
 
 .contact-information > p {
-    color: #666666;
+    color: #666;
     line-height: 1.8;
 }
 
@@ -1527,11 +1282,11 @@ footer {
 }
 
 .contact-detail strong {
-    color: #333333;
+    color: #333;
 }
 
 .contact-detail span {
-    color: #666666;
+    color: #666;
 }
 
 .form-group {
@@ -1542,14 +1297,14 @@ footer {
     display: block;
     margin-bottom: 7px;
     font-weight: 600;
-    color: #333333;
+    color: #333;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #dddddd;
+    border: 1px solid #ddd;
     border-radius: 5px;
     font-family: inherit;
     font-size: 14px;
@@ -1559,13 +1314,13 @@ footer {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #8b0000;
+    border-color: #0B2545;
 }
 
 .contact-form button {
     border: none;
-    background: #8b0000;
-    color: #ffffff;
+    background: #0B2545;
+    color: #fff;
     padding: 13px 25px;
     border-radius: 5px;
     font-weight: 600;
@@ -1573,11 +1328,8 @@ footer {
 }
 
 .contact-form button:hover {
-    background: #650000;
+    background: #071A30;
 }
-
-
-/* MOBILE */
 
 @media (max-width: 800px) {
 
@@ -1590,5 +1342,4 @@ footer {
         padding: 25px;
         gap: 35px;
     }
-
 }
