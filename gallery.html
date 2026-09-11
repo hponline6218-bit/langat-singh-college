@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Langat Singh College</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
+
+<style>
+.gallery-feature {
+    margin-top: 30px;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    background: #5b1018;
+    box-shadow: 0 12px 30px rgba(0,0,0,.14);
+}
+.gallery-feature img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    display: block;
+}
+.gallery-feature-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 55px 35px 28px;
+    color: #fff;
+    background: linear-gradient(transparent, rgba(0,0,0,.78));
+}
+.gallery-feature-content h2 { margin: 0 0 7px; font-size: 30px; }
+.gallery-feature-content p { margin: 0; font-size: 16px; }
+.real-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+}
+.real-gallery-card {
+    overflow: hidden;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0,0,0,.10);
+}
+.real-gallery-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    transition: transform .35s ease;
+}
+.real-gallery-card:hover img { transform: scale(1.04); }
+.real-gallery-card div { padding: 18px; }
+.real-gallery-card h3 { margin: 0 0 7px; }
+.real-gallery-card p { margin: 0; line-height: 1.6; }
+.gallery-note {
+    margin-top: 25px;
+    padding: 18px;
+    border-left: 4px solid #8d1b2a;
+    background: #faf5f5;
+    border-radius: 8px;
+}
+@media (max-width: 800px) {
+    .real-gallery-grid { grid-template-columns: 1fr; }
+    .gallery-feature img { height: 300px; }
+    .gallery-feature-content h2 { font-size: 24px; }
+}
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="container top-content">
+        <span>Welcome to Langat Singh College, Muzaffarpur</span>
+        <div class="top-links">
+            <a href="notices.html">Notice</a>
+            <a href="admission.html">Admission</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+</div>
+
+<header class="college-header">
+    <div class="container header-content">
+        <div class="college-logo"><span>LSC</span></div>
+        <div class="college-title">
+            <h1>LANGAT SINGH COLLEGE</h1>
+            <p>MUZAFFARPUR, BIHAR</p>
+            <span>Under B. R. Ambedkar Bihar University, Muzaffarpur</span>
+        </div>
+    </div>
+</header>
+
+<nav class="navbar">
+    <div class="container nav-container">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="admission.html">Admission</a>
+        <a href="notices.html">Notice</a>
+        <a href="payment.html" class="payment-button">Online Fee Payment</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<section class="page-hero">
+    <div class="container">
+        <h1>Gallery</h1>
+        <p>Langat Singh College campus and heritage</p>
+    </div>
+</section>
+
+<section class="page-content">
+<div class="container">
+
+    <div class="content-card">
+        <span class="section-label">COLLEGE GALLERY</span>
+        <h2>Photo & Media Gallery</h2>
+        <p>Real photographs of Langat Singh College and its historic campus.</p>
+    </div>
+
+    <div class="gallery-feature">
+        <img src="https://www.lscollege.ac.in/sites/default/files/styles/gallery_slideshow/public/DSC_0858.JPG?itok=LKeS9EyZ" alt="Langat Singh College historic building">
+        <div class="gallery-feature-content">
+            <h2>Historic College Building</h2>
+            <p>Langat Singh College, Muzaffarpur</p>
+        </div>
+    </div>
+
+    <div class="real-gallery-grid">
+
+        <article class="real-gallery-card">
+            <img src="https://www.lscollege.ac.in/sites/default/files/styles/gallery_slideshow/public/DSC_0858.JPG?itok=LKeS9EyZ" alt="Langat Singh College building">
+            <div>
+                <h3>College Building</h3>
+                <p>The historic red-brick architecture of the college campus.</p>
+            </div>
+        </article>
+
+        <article class="real-gallery-card">
+            <img src="https://www.joonsquare.com/usermanage/image/business/langat-singh-college-muzaffarpur-15495/langat-singh-college-muzaffarpur-langat-singh-college-003.jpg" alt="Langat Singh College entrance gate">
+            <div>
+                <h3>College Entrance</h3>
+                <p>The entrance gate of Langat Singh College, Muzaffarpur.</p>
+            </div>
+        </article>
+
+        <article class="real-gallery-card">
+            <img src="https://image-static.collegedunia.com/public/reviewPhotos/1144658/1000089672.jpg" alt="Langat Singh College campus aerial view">
+            <div>
+                <h3>Campus View</h3>
+                <p>Aerial view showing the distinctive historic campus buildings.</p>
+            </div>
+        </article>
+
+    </div>
+
+    <div class="gallery-note">
+        <strong>Official media:</strong> For more recent college events and photographs, visit the official college media pages.
+        <br><br>
+        <a class="small-button" href="https://lscollege.ac.in/media-pages" target="_blank" rel="noopener noreferrer">Official Media Pages</a>
+        <a class="small-button" href="https://lscollege.ac.in/photo-gallery" target="_blank" rel="noopener noreferrer">Official Photo Gallery</a>
+    </div>
+
+</div>
+</section>
+
+<footer>
+    <div class="container footer-grid">
+        <div>
+            <h3>LANGAT SINGH COLLEGE</h3>
+            <p>Muzaffarpur, Bihar</p>
+            <p>Higher education, academic development and student support.</p>
+        </div>
+        <div>
+            <h3>Quick Links</h3>
+            <a href="about.html">About College</a>
+            <a href="courses.html">Courses</a>
+            <a href="notices.html">Notice</a>
+            <a href="payment.html">Online Payment</a>
+        </div>
+        <div>
+            <h3>Student Corner</h3>
+            <a href="admission.html">Admission</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://lscollege.ac.in/e-content" target="_blank" rel="noopener noreferrer">E-Content</a>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <p>Muzaffarpur, Bihar - 842001</p>
+            <p>Tel: 0621-2242261</p>
+            <p>lscollegeprincipal@gmail.com</p>
+        </div>
+    </div>
+    <div class="copyright">© 2026 Langat Singh College, Muzaffarpur. All Rights Reserved.</div>
+</footer>
+
+</body>
+</html>

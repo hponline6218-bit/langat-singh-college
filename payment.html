@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Fee Payment | Langat Singh College</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* ================================
+           PAYMENT PAGE
+           ================================ */
+
+        .payment-hero {
+            background: linear-gradient(135deg, #4b0000, #a40000, #d00000);
+            color: #fff;
+            padding: 65px 0;
+            text-align: center;
+        }
+
+        .payment-hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .payment-hero p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .payment-section {
+            padding: 70px 0;
+            background: #fffafa;
+        }
+
+        .payment-intro {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 45px;
+        }
+
+        .payment-intro h2 {
+            color: #650000;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .payment-intro p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .payment-category {
+            margin-bottom: 40px;
+        }
+
+        .payment-category-title {
+            background: #650000;
+            color: #fff;
+            padding: 15px 20px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .payment-category-title h2 {
+            font-size: 21px;
+        }
+
+        .payment-card {
+            background: #fff;
+            border: 1px solid #efdada;
+            border-top: none;
+            padding: 18px 20px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            gap: 20px;
+
+            transition: 0.3s;
+        }
+
+        .payment-card:hover {
+            background: #fff6f6;
+        }
+
+        .payment-card:last-child {
+            border-radius: 0 0 8px 8px;
+        }
+
+        .payment-name {
+            color: #650000;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .payment-note {
+            color: #777;
+            font-size: 12px;
+            margin-top: 4px;
+        }
+
+        .pay-button {
+            background: #a40000;
+            color: #fff;
+
+            padding: 10px 20px;
+
+            border-radius: 5px;
+
+            font-size: 13px;
+            font-weight: bold;
+
+            white-space: nowrap;
+
+            transition: 0.3s;
+        }
+
+        .pay-button:hover {
+            background: #e00000;
+            transform: translateY(-2px);
+        }
+
+        .payment-warning {
+            margin-top: 45px;
+
+            padding: 22px;
+
+            background: #fff;
+            border-left: 5px solid #a40000;
+
+            box-shadow: 0 5px 20px rgba(100, 0, 0, 0.08);
+        }
+
+        .payment-warning h3 {
+            color: #650000;
+            margin-bottom: 8px;
+        }
+
+        .payment-warning p {
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 6px;
+        }
+
+        .support-box {
+            margin-top: 25px;
+
+            padding: 20px;
+
+            background: #fff0f0;
+
+            border-radius: 8px;
+
+            text-align: center;
+        }
+
+        .support-box strong {
+            color: #850000;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 650px) {
+
+            .payment-hero h1 {
+                font-size: 30px;
+            }
+
+            .payment-card {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .pay-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <!-- TOP BAR -->
+
+    <div class="top-bar">
+
+        <div class="container top-content">
+
+            <span>
+                Welcome to Langat Singh College, Muzaffarpur
+            </span>
+
+            <div class="top-links">
+                <a href="notices.html">Notice</a>
+                <a href="#">Downloads</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- HEADER -->
+
+    <header class="college-header">
+
+        <div class="container header-content">
+
+            <div class="college-logo">
+                <span>LSC</span>
+            </div>
+
+            <div class="college-title">
+
+                <h1>LANGAT SINGH COLLEGE</h1>
+
+                <p>MUZAFFARPUR, BIHAR</p>
+
+                <span>
+                    Under B. R. Ambedkar Bihar University, Muzaffarpur
+                </span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="courses.html">
+                Courses
+            </a>
+
+            <a href="#">
+                Admission
+            </a>
+
+            <a href="notices.html">
+                Notice
+            </a>
+
+            <a href="payment.html" class="payment-button">
+                Online Fee Payment
+            </a>
+
+            <a href="#">
+                Gallery
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- PAYMENT HERO -->
+
+    <section class="payment-hero">
+
+        <div class="container">
+
+            <h1>Online Fee Payment</h1>
+
+            <p>
+                Langat Singh College, Muzaffarpur
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PAYMENT SECTION -->
+
+    <section class="payment-section">
+
+        <div class="container">
+
+
+            <div class="payment-intro">
+
+                <h2>Online Fee Submission</h2>
+
+                <p>
+                    Select the appropriate fee category below
+                    to proceed with online payment.
+                </p>
+
+            </div>
+
+
+
+            <!-- ================================
+                 CLC / CHARACTER / TRANSFER
+                 ================================ -->
+
+            <div class="payment-category">
+
+                <div class="payment-category-title">
+
+                    <h2>
+                        CLC / Character / Transfer Certificate Fee
+                    </h2>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div>
+
+                        <div class="payment-name">
+                            Intermediate
+                        </div>
+
+                        <div class="payment-note">
+                            CLC / Character / Transfer Certificate
+                        </div>
+
+                    </div>
+
+                    <a
+                        href="https://lsclc.collegemis.in/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Apply / Pay
+                    </a>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div>
+
+                        <div class="payment-name">
+                            UG / FDC / PG
+                        </div>
+
+                        <div class="payment-note">
+                            CLC / Character / Transfer Certificate
+                        </div>
+
+                    </div>
+
+                    <a
+                        href="https://lsclc.collegemis.in/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Apply / Pay
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================
+                 FDC 1ST SEMESTER
+                 ================================ -->
+
+            <div class="payment-category">
+
+                <div class="payment-category-title">
+
+                    <h2>
+                        FDC - 1st Semester Admission Fee
+                    </h2>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        FDC 1st Semester - Science
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/12534"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        FDC 1st Semester - Humanities (Arts)
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/12536"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        FDC 1st Semester - Social Sciences (Arts)
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/14755"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        FDC 1st Semester - Geography / Commerce
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/12554"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================
+                 TDC PART 2 AND 3
+                 ================================ -->
+
+            <div class="payment-category">
+
+                <div class="payment-category-title">
+
+                    <h2>
+                        TDC Part-2 & Part-3 Admission
+                    </h2>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        TDC Part-2 and Part-3 Admission
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/13474"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================
+                 FDC 2ND TO 3RD SEMESTER
+                 ================================ -->
+
+            <div class="payment-category">
+
+                <div class="payment-category-title">
+
+                    <h2>
+                        FDC 2nd to 3rd Semester Admission Fee
+                    </h2>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        Humanities (Arts)
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/19166"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        Social Science (Arts)
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/19651"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        Science
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/19652"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        Commerce / Geography
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/19655"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================
+                 FDC 4TH TO 8TH SEMESTER
+                 ================================ -->
+
+            <div class="payment-category">
+
+                <div class="payment-category-title">
+
+                    <h2>
+                        FDC 4th to 8th Semester Admission Fee
+                    </h2>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        Humanities (Arts)
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/12594"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        Social Science (Arts)
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/15434"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        Science
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/12595"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        Commerce / Geography
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/12579"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================
+                 POST GRADUATION
+                 ================================ -->
+
+            <div class="payment-category">
+
+                <div class="payment-category-title">
+
+                    <h2>
+                        Post Graduation
+                    </h2>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        PG 1st Semester Admission
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/12392"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        PG 1st Semester Registration
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/20293"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        PG 2nd Semester Admission
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/14754"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        PG 3rd Semester Admission
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/13534"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        PG 4th Semester Admission
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/18341"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================
+                 EXAMINATION FEE
+                 ================================ -->
+
+            <div class="payment-category">
+
+                <div class="payment-category-title">
+
+                    <h2>
+                        Examination Fee
+                    </h2>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        Intermediate Examination
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/14394"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        TDC Part-2 Special Examination Fee
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/13221"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        TDC Part-3 Examination Fee
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/13222"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        FDC Exam Fee (I to III Semester)
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/18990"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        FDC Exam Fee (IV to VIII Semester)
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/12634"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <div class="payment-name">
+                        PG Examination Fee
+                    </div>
+
+                    <a
+                        href="https://payments.billdesk.com/bdcollect/bd/langatsingh/12635"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pay-button"
+                    >
+                        Pay Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================
+                 IMPORTANT INFORMATION
+                 ================================ -->
+
+            <div class="payment-warning">
+
+                <h3>
+                    Important Information
+                </h3>
+
+                <p>
+                    • भुगतान करने से पहले अपनी fee category
+                    ध्यानपूर्वक चुनें।
+                </p>
+
+                <p>
+                    • Payment successful होने के बाद receipt/
+                    transaction details सुरक्षित रखें।
+                </p>
+
+                <p>
+                    • यदि payment के दौरान पैसा फंस जाता है,
+                    तो official support से संपर्क करें।
+                </p>
+
+                <p>
+                    • CLC / Character / Transfer Certificate
+                    form online भरने के बाद printout college
+                    में जमा करना आवश्यक है।
+                </p>
+
+            </div>
+
+
+
+            <!-- SUPPORT -->
+
+            <div class="support-box">
+
+                <strong>
+                    Payment Support:
+                </strong>
+
+                यदि fee payment के दौरान पैसा फंस गया है,
+                तो official page के अनुसार
+                <strong>pgsupport@billdesk.com</strong>
+                पर email करें।
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <h3>
+                    LANGAT SINGH COLLEGE
+                </h3>
+
+                <p>
+                    Muzaffarpur, Bihar
+                </p>
+
+                <p>
+                    Providing quality higher education
+                    and academic opportunities.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About College
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="notices.html">
+                    Notice
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Student Corner
+                </h3>
+
+                <a href="payment.html">
+                    Online Payment
+                </a>
+
+                <a href="#">
+                    Admission
+                </a>
+
+                <a href="#">
+                    Downloads
+                </a>
+
+                <a href="#">
+                    Gallery
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    Langat Singh College
+                </p>
+
+                <p>
+                    Muzaffarpur, Bihar
+                </p>
+
+                <p>
+                    Tel: 0621-2242261
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Langat Singh College, Muzaffarpur.
+            All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
